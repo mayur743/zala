@@ -1,0 +1,25 @@
+country,orders,revenue,revenue_share_pct
+USA,91,523.06,22.46
+Canada,56,303.96,13.05
+France,35,195.1,8.38
+Brazil,35,190.1,8.16
+Germany,28,156.48,6.72
+United Kingdom,21,112.86,4.85
+Czech Republic,14,90.24,3.88
+Portugal,14,77.24,3.32
+India,13,75.26,3.23
+Chile,7,46.62,2.0
+Hungary,7,45.62,1.96
+Ireland,7,45.62,1.96
+Austria,7,42.62,1.83
+Finland,7,41.62,1.79
+Netherlands,7,40.62,1.74
+Norway,7,39.62,1.7
+Sweden,7,38.62,1.66
+Argentina,7,37.62,1.62
+Australia,7,37.62,1.62
+Belgium,7,37.62,1.62
+Denmark,7,37.62,1.62
+Italy,7,37.62,1.62
+Poland,7,37.62,1.62
+Spain,7,37.62,1.62
