@@ -1,0 +1,25 @@
+genre,line_items,revenue,revenue_share_pct
+Rock,835,826.65,35.5
+Latin,386,382.14,16.41
+Metal,264,261.36,11.22
+Alternative & Punk,244,241.56,10.37
+TV Shows,47,93.53,4.02
+Jazz,80,79.2,3.4
+Blues,61,60.39,2.59
+Drama,29,57.71,2.48
+Classical,41,40.59,1.74
+R&B/Soul,41,40.59,1.74
+Sci Fi & Fantasy,20,39.8,1.71
+Reggae,30,29.7,1.28
+Pop,28,27.72,1.19
+Soundtrack,20,19.8,0.85
+Comedy,9,17.91,0.77
+Hip Hop/Rap,17,16.83,0.72
+Bossa Nova,15,14.85,0.64
+Alternative,14,13.86,0.6
+World,13,12.87,0.55
+Science Fiction,6,11.94,0.51
+Electronica/Dance,12,11.88,0.51
+Heavy Metal,12,11.88,0.51
+Easy Listening,10,9.9,0.43
+Rock And Roll,6,5.94,0.26
