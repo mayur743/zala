@@ -1,0 +1,44 @@
+check,observed,status,note
+table_present:Album,1.0,PASS,Expected Chinook table exists
+table_present:Artist,1.0,PASS,Expected Chinook table exists
+table_present:Customer,1.0,PASS,Expected Chinook table exists
+table_present:Employee,1.0,PASS,Expected Chinook table exists
+table_present:Genre,1.0,PASS,Expected Chinook table exists
+table_present:Invoice,1.0,PASS,Expected Chinook table exists
+table_present:InvoiceLine,1.0,PASS,Expected Chinook table exists
+table_present:MediaType,1.0,PASS,Expected Chinook table exists
+table_present:Playlist,1.0,PASS,Expected Chinook table exists
+table_present:PlaylistTrack,1.0,PASS,Expected Chinook table exists
+table_present:Track,1.0,PASS,Expected Chinook table exists
+duplicate_pk:Album.AlbumId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:Artist.ArtistId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:Customer.CustomerId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:Employee.EmployeeId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:Genre.GenreId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:Invoice.InvoiceId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:InvoiceLine.InvoiceLineId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:MediaType.MediaTypeId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:Playlist.PlaylistId,0.0,PASS,duplicate count; expected 0
+duplicate_pk:Track.TrackId,0.0,PASS,duplicate count; expected 0
+"duplicate_pk:PlaylistTrack.(PlaylistId,TrackId)",0.0,PASS,duplicate composite-key count; expected 0
+orphan_fk:Invoice.CustomerId->Customer.CustomerId,0.0,PASS,orphan count; expected 0
+orphan_fk:InvoiceLine.InvoiceId->Invoice.InvoiceId,0.0,PASS,orphan count; expected 0
+orphan_fk:InvoiceLine.TrackId->Track.TrackId,0.0,PASS,orphan count; expected 0
+orphan_fk:Track.AlbumId->Album.AlbumId,0.0,PASS,orphan count; expected 0
+orphan_fk:Track.MediaTypeId->MediaType.MediaTypeId,0.0,PASS,orphan count; expected 0
+orphan_fk:Track.GenreId->Genre.GenreId,0.0,PASS,orphan count; expected 0
+orphan_fk:Customer.SupportRepId->Employee.EmployeeId,0.0,PASS,orphan count; expected 0
+orphan_fk:Album.ArtistId->Artist.ArtistId,0.0,PASS,orphan count; expected 0
+orphan_fk:PlaylistTrack.PlaylistId->Playlist.PlaylistId,0.0,PASS,orphan count; expected 0
+orphan_fk:PlaylistTrack.TrackId->Track.TrackId,0.0,PASS,orphan count; expected 0
+null_numeric:Invoice.Total,0.0,PASS,NULL count; expected 0
+negative_numeric:Invoice.Total,0.0,PASS,negative count; expected 0 for this case study
+null_numeric:InvoiceLine.UnitPrice,0.0,PASS,NULL count; expected 0
+negative_numeric:InvoiceLine.UnitPrice,0.0,PASS,negative count; expected 0 for this case study
+null_numeric:InvoiceLine.Quantity,0.0,PASS,NULL count; expected 0
+negative_numeric:InvoiceLine.Quantity,0.0,PASS,negative count; expected 0 for this case study
+null_numeric:Track.UnitPrice,0.0,PASS,NULL count; expected 0
+negative_numeric:Track.UnitPrice,0.0,PASS,negative count; expected 0 for this case study
+invoice_line_reconciliation_cents,0.0,PASS,absolute difference; expected <= 1 cent
+invoice_count,412.0,PASS,one row is one invoice/order
+invoice_line_count,2240.0,PASS,one row is one purchased line item
